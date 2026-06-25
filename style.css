@@ -1,0 +1,9 @@
+ :root {
+   --Preto-forte: #001524ff;
+   --Azul-marinho: #15616dff;
+   --Branco: #ffecd1ff;
+   --Laranja: #ff7d00ff;
+ }
+ body{
+    background: var( --Azul-marinho);
+ }
