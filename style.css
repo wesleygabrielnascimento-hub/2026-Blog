@@ -1,9 +1,20 @@
- :root {
-   --Preto-forte: #001524ff;
-   --Azul-marinho: #15616dff;
-   --Branco: #ffecd1ff;
-   --Laranja: #ff7d00ff;
- }
- body{
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montenegrin+Gothic+One&display=swap');
+
+
+:root {
+  --Preto-forte: #001524ff;
+  --Azul-marinho: #15616dff;
+  --Branco: #ffecd1ff;
+  --Laranja: #ff7d00ff;
+  --Titulo :  "Montenegrin Gothic One", serif;
+  --Texto : "Merriweather", serif;
+  }
+
+  body{
     background: var( --Azul-marinho);
- }
+    font-family: var(--Texto);
+  }
+h1{
+  font-family: var(--Titulo);
+}
+  
