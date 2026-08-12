@@ -1,20 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montenegrin+Gothic+One&display=swap');
-
-
-:root {
-  --Preto-forte: #001524ff;
-  --Azul-marinho: #15616dff;
-  --Branco: #ffecd1ff;
-  --Laranja: #ff7d00ff;
-  --Titulo :  "Montenegrin Gothic One", serif;
-  --Texto : "Merriweather", serif;
-  }
-
-  body{
-    background: var( --Azul-marinho);
-    font-family: var(--Texto);
-  }
-h1{
-  font-family: var(--Titulo);
+@import url('https://fonts.googleapis.com/css2?family=Montenegrin+Gothic+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
 }
-  
+:root {
+    --verde: rgb(73, 78, 74);
+    --cinza-verde: rgb(134, 131, 130);
+    --prata: rgb(0, 82, 31);
+    --branco: rgb(0, 0, 0);
+    --titulo: "Montenegrin Gothic One", serif;
+    --texto: "Raleway", sans-serif;
+}
+
+body {
+    background: var(--cinza-verde);
+    font-family: var(--texto);
+}
+
+header {
+    background-color: var(--verde);
+    display: flex;
+    justify-content: space-around;
+    color: var(--branco);
+}
+.menu{
+  display: flex;
+  list-style: none
+}
