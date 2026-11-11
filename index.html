@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog de Música</title>
+    <title>Blog de música</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <header>
+        <div>
+            <img class="logo" src="img/logo-musica.svg" alt="Logo do blog de música">
+        </div>
+        <div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Loja</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h2>Novidades sobre os lançamentos</h2>
+        <div class="noticias">
+            <div class="card">
+                <img src="img/capa-album.svg" alt="Capa do novo álbum">
+                <h3>tudo que veio no novo álbum</h3>
+                <p> faixas inéditas, parcerias com convidados especiais e .....</p>
+                <div class="botoes">
+                    <button class="curtida">👍<spam>0</spam></button>
+                    <button class="amei">❤️<spam>0</spam></button>
+                </div>
+<a href="noticias/noticia01.html"> Saiba mais ....    </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Feito por Wesley ©</p>
+    </footer>
 </body>
+<script>
+    const botao = document.querySelector('.botao-curtida');
+    botao.forEach(botao => {
+    botao.addEventListener('click, botaoClicado');
+    });
+
+    function botaoClicado() {
+        console.log('Botao clicado')
+        let texto = event.currentTarget.querySelector('spam');
+        texto.textContent++
+    }
+</script>
+
 </html>
